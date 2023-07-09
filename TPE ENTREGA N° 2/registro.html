@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro / Celer</title>
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Este es el navegador común a todos los html-->
+    <nav class="nav">
+        <button id="menuButton">Menú</button>
+        <ul id="menuList" class="grupo-dos">
+            <li><a href="index.html">Menú</a></li>
+            <li><a href="compra.html">Comprar</a></li>
+            <li><a href="registro.html">Registrarse</a></li>
+            <li><a href="versus.html">Versus</a></li>
+        </ul>
+        <img class="navLogo" src="img/logoCeler.png" alt="logo del navegador">
+    </nav>
+    <main class="registroMain">
+        <h1 class="tituloRegistro">¡Registrate en nuestra Página!</h1>
+        <section class="registro">
+            <h2>Formulario:</h2>
+            <form id="form">
+                <!--formulario-->
+                <div class="datos">
+                    <p>Ingrese Nombre:</p>
+                    <input type="text" name="nombre" placeholder="Nombre" required maxlength="15">
+                    <p>Ingrese Apellido:</p>
+                    <input type="text" name="apellido" placeholder="Apellido" required maxlength="15">      
+                    <p>Ingrese su fecha de nacimiento:</p>
+                    <input type="date" name="fecha" placeholder="Fecha de Nacimiento">
+                    <p>¿Qué edad tienes?</p>                        
+                    <input type="number" name="edad" placeholder="Edad" min="18">
+                    <p>Ingrese su ciudad:</p>
+                    <input type="text" name="ciudad" placeholder="Ciudad" required maxlength="15">
+                    <p>Ingrese su dirección:</p>
+                    <input type="text" name="direccion" placeholder="Dirección" required maxlength="15">
+                    <input type="text" name="aclaracion" placeholder="N°/Depto/Piso" required maxlength="15">
+                    <p>Ingrese Email:</p>
+                    <input type="text" name="email" placeholder="Ingrese Email" required maxlength="40">
+                    <p>Confirmar Email:</p>
+                    <input type="text" name="email" placeholder="Confirme Email" required maxlength="40">
+                    <p>Ingrese contraseña:</p>
+                    <input type="text" name="contraseña" placeholder="Ingrese contraseña" required maxlength="20">
+                    <p>Confirmar contraseña:</p>
+                    <input type="text" name="contraseña" placeholder="Confirmar contraseña" required maxlength="20">
+                </div>
+                <!--apartado de captcha-->
+                <div class="contenedor-captcha">
+                    <div class="preview">
+                        <p></p>
+                    </div>
+                    <button id="btn-refresh" type="button">Refrescar captcha</button>
+                    <div class="validacion-registro">
+                        <input type="text" id="respuesta__captcha" placeholder="Introduzca el CAPTCHA">
+                    </div>
+                    <button id="btn-registro" type="submit">Registrarse</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Celer inc. derechos reservados 2023.</p>
+        <p>contactá con nosotros <a href="https://wa.me/5492281302079" class="whatsapp" target="_blank">aquí</a></p>
+    </footer>
+    <script src="js/scriptResponsive.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versus / Celer</title>
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Este es el navegador común a todos los html-->
+    <nav class="nav">
+        <button id="menuButton">Menú</button>
+        <ul id="menuList" class="grupo-dos">
+            <li><a href="index.html">Menú</a></li>
+            <li><a href="compra.html">Comprar</a></li>
+            <li><a href="registro.html">Registrarse</a></li>
+            <li><a href="versus.html">Versus</a></li>
+        </ul>
+        <img class="navLogo" src="img/logoCeler.png" alt="logo del navegador">
+    </nav>
+    <header class="servicios">
+        <ul class="logoList">
+            <li><img class="logo-envio" src="img/envio-gratis.png" alt="logo de envío gratis"></li>
+            <li><img class="logo-seguimiento" src="img/logo-seguimiento.png" alt="logo de Seguimiento en linea"></li>
+            <li><img class="logo-tarjeta" src="img/logo-tarjeta.png" alt="logo de pago con crédito"></li>
+        </ul>
+        <ul class="serviciosList">
+            <li>Envíos Gratis</li>
+            <li>Seguimiento en Línea</li>
+            <li>Hasta 12 Cuotas</li>
+        </ul>
+    </header>
+    <main class="versusMain">
+
+        <h1>Versus</h1>
+        <p>¡cargá los datos y compará sus características!</p>
+
+        <section class="phoneData">
+            <label fot="nombre">Smartphone:</label>
+            <input type="text" id="nombre" placeholder="Nombre del dispositivo">
+      
+            <label for="memoria-ram">Memoria RAM:</label>
+            <input type="number" id="memoria-ram" placeholder="Gb de memoria">
+          
+            <label for="almacenamiento">Almacenamiento:</label>
+            <input type="number" id="almacenamiento" placeholder="Gb de almacenamiento">
+
+            <label for="camara">Megapíxeles de la cámara:</label>
+            <input type="number" id="camara" placeholder="Mpx de resolución">
+        </section> 
+
+        <button type="button" id="btn-add-item">Agregar</button>
+          
+        <div class="selectores">
+            <label for="select-item1">Seleccionar elemento 1:</label>
+            <select id="select-item1"></select>
+      
+            <label for="select-item2">Seleccionar elemento 2:</label>
+            <select id="select-item2"></select>
+        </div>
+
+        <button type="button" id="btn-show-item">Mostrar</button>
+        <button type="button" id="btn-clear-table">Vaciar</button>
+        <table class="columnas">
+            <tr>
+                <td>Nombre</td>
+                <td>Camara</td>
+                <td>Ram</td>
+                <td>Almc.</td>
+            </tr>
+        </table>
+        <table id="dinamicTable">
+
+        </table>
+
+    </main>
+
+    <footer class="footer">
+        <p>Celer inc. derechos reservados 2023.</p>
+        <p>contactá con nosotros <a href="https://wa.me/5492281302079" class="whatsapp" target="_blank">aquí</a></p>
+    </footer>
+
+    <script src="js/tablaDinamica.js"></script>
+    <script src="js/scriptResponsive.js"></script>
+</body>
+
+</html>
